@@ -10,7 +10,81 @@ theme = "DoIt"
 
 [params]
   # DoIt theme version
-  version = "0.2.X"
+  version = "0.3.X"
+
+  [params.home]
+    #  amount of RSS pages
+    rss = 10
+    # Home page profile
+    [params.home.profile]
+      enable = true
+      # Gravatar Email for preferred avatar in home page
+      gravatarEmail = ""
+      # URL of avatar shown in home page
+      # Place your avatar file under static or assets directory
+      # The filepath is relative to the static or assets directory
+      avatarURL = "/images/profile_zoom.jpeg"
+      # URL the avatar links to
+      avatarLinkURL = ""
+      #  title shown in home page (HTML format is supported)
+      title = "Sungsik Nam"
+      # subtitle shown in home page
+      subtitle = "Deep Learning / Embedded C++ Engineer"
+      # whether to use typeit animation for subtitle
+      typeit = false
+      # whether to show social links
+      social = true
+      #  disclaimer (HTML format is supported)
+      disclaimer = ""
+    # Home page posts
+    [params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      paginate = 6
+      #  replaced with hiddenFromHomePage in params.page
+      # default behavior when you don't set "hiddenFromHomePage" in front matter
+      defaultHiddenFromHomePage = false
+
+  # Social config about the author
+  [params.social]
+    GitHub = "jmyl"
+    Linkedin = "sungsik-nam"
+    Gitlab = "jmyl"
+    Xing = "Sungsik_Nam"
+    Email = "jmyl@me.com"
+    RSS = true # 
+
+  [params.search]
+    enable = true
+    # type of search engine ("algolia", "fuse")
+    type = "fuse"
+    # max index length of the chunked content
+    contentLength = 4000
+    # placeholder of the search bar
+    placeholder = ""
+    #  max number of results length
+    maxResultLength = 10
+    #  snippet length of the result
+    snippetLength = 30
+    #  HTML tag name of the highlight part in results
+    highlightTag = "em"
+    #  whether to use the absolute URL based on the baseURL in search index
+    absoluteURL = false
+    [params.search.algolia]
+      index = ""
+      appID = ""
+      searchKey = ""
+    [params.search.fuse]
+      #  https://fusejs.io/api/options.html
+      isCaseSensitive = false
+      minMatchCharLength = 2
+      findAllMatches = false
+      location = 0
+      threshold = 0.3
+      distance = 100
+      ignoreLocation = false
+      useExtendedSearch = false
+      ignoreFieldNorm = false
 
 [menu]
   [[menu.main]]
@@ -47,3 +121,10 @@ theme = "DoIt"
   [markup.highlight]
     # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
+
+[outputs]
+  # 
+  home = ["HTML", "RSS", "JSON"]
+  # page = ["HTML", "MarkDown"]
+  # section = ["HTML", "RSS"]
+  # taxonomy = ["HTML", "RSS"]

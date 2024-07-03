@@ -1,6 +1,7 @@
 +++
 title = 'Start!'
 date = 2024-07-03T07:54:18+02:00
+authors = ['Sungsik']
 draft = false
 +++
 
