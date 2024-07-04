@@ -7,6 +7,8 @@ draft = false
 
 My first blog article :-)
 
+<!--more-->
+
 As think writing is powerful.
 Every word comes from mouth into the air.
 But writing remains and makes us to think about it.
