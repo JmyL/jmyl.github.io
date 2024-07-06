@@ -3,7 +3,7 @@ title = 'PointPillars'
 date = 2024-07-03T11:20:04+02:00
 authors = ['Sungsik']
 categories = ['LiDAR OD']
-tags = ['Deep Learning', 'Paper Review']
+tags = ['Deep Learning', 'Paper Review', 'LiDAR', 'Object Detection']
 featuredImage = 'images/2024-07-03-12-23-51.png'
 +++
 
@@ -29,7 +29,7 @@ Therefore latency is a significant problem.
 
 Lang et al. (2018) tackle the second problem, the curse of dimensionality, by voxelizing(or more precisely, pillarizing) the point cloud to transform the problem domain from 3D to 2D.
 These pillars are typically 6 meters in height so they can cover all vehicles and pedestrians in normal driving situations.
-For each pillar they used [PointNet](./pointnet.md), 2x ( MLP + Channelwise-ReduceMax ), to encode 3D shape of internal point cloud to descriptive features, regardless of the points' order.
+For each pillar they used [PointNet]({{< ref "pointnet.md">}}), 2x ( mlp + max pool ), to encode 3D shape of internal point cloud to descriptive features, regardless of the points' order.
 
 <!-- ![](images/2024-07-03-12-23-51.png) -->
 
