@@ -3,10 +3,15 @@ baseURL = "http://jmyl.github.io"
 defaultContentLanguage = "en"
 # language code
 languageCode = "en"
-title = "Sungsik's Blog"
+title = "Devlosophy"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "DoIt"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
 
 [params]
   # DoIt theme version
