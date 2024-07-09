@@ -3,7 +3,7 @@ title = 'PointNet'
 date = 2024-07-04T08:12:05+02:00
 authors = ['Sungsik']
 categories = ['LiDAR OD']
-tags = ['Deep Learning', 'Paper Review', 'LiDAR', 'Object Detection']
+tags = ['DeepLearning', 'PaperReview', 'LiDAR', 'ObjectDetection']
 featuredImage = 'images/2024-07-04-08-13-17.png'
 +++
 

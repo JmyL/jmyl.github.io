@@ -3,7 +3,7 @@ title = "You can't manage what you can't measure"
 date = 2024-07-06T23:17:26+02:00
 authors = ['Sungsik']
 categories = ['Dev Philosophy']
-tags = ['Tech Lead', 'Test']
+tags = ['TechLead', 'Test']
 featuredImage = 'images/ruler.jpg'
 +++
 

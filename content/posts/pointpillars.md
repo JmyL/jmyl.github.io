@@ -3,7 +3,7 @@ title = 'PointPillars'
 date = 2024-07-03T11:20:04+02:00
 authors = ['Sungsik']
 categories = ['LiDAR OD']
-tags = ['Deep Learning', 'Paper Review', 'LiDAR', 'Object Detection']
+tags = ['DeepLearning', 'PaperReview', 'LiDAR', 'ObjectDetection']
 featuredImage = 'images/2024-07-03-12-23-51.png'
 +++
 
