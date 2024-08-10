@@ -16,6 +16,15 @@ theme = "DoIt"
 [params]
   # DoIt theme version
   version = "0.3.X"
+  [page]
+    [params.page.math]
+      enable = true
+      blockLeftDelimiter = '\['
+      blockRightDelimiter = '\]'
+      inlineLeftDelimiter = '\('
+      inlineRightDelimiter = '\)'
+      copyTex = true
+      mhchem = true
 
   [params.home]
     #  amount of RSS pages
@@ -34,7 +43,7 @@ theme = "DoIt"
       #  title shown in home page (HTML format is supported)
       title = "Sungsik Nam"
       # subtitle shown in home page
-      subtitle = "Deep Learning / Embedded C++ Engineer"
+      subtitle = "C++ Engineer, specialized in Embedded System and Deep Learning"
       # whether to use typeit animation for subtitle
       typeit = false
       # whether to show social links
@@ -127,6 +136,13 @@ theme = "DoIt"
     # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
 
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
 [outputs]
   # 
   home = ["HTML", "RSS", "JSON"]
