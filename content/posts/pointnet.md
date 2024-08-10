@@ -38,5 +38,6 @@ Since every point needs to "be represented without such a transformation", we do
 The following convlutional network will do his job.
 
 There are segmentation networks that use the tile operation to broadcast aggregated global features (the output features of the last MLP in the encoder) to the local features (geometry).
-This type of feature aggregation is applied to the PFE in PointPillars, not for segmentation, but to enrich features.
+This type of feature aggregation is also applied to the PFE in PointPillars to enrich features with mixing global and local context, not for segmentation.
+Don't be confused.
 
