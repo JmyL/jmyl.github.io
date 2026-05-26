@@ -67,8 +67,8 @@ theme = "DoIt"
   [params.social]
     GitHub = "jmyl"
     Linkedin = "sungsik-nam"
-    Gitlab = "jmyl"
-    Xing = "Sungsik_Nam"
+    # Gitlab = "jmyl"
+    # Xing = "Sungsik_Nam"
     Email = "jmyl@me.com"
     RSS = true # 
 
