@@ -87,7 +87,13 @@ featuredImage = 'images/protocol-handler-transport-independent.png'
 
 1. 원본 Obsidian 문서를 읽고 핵심 아이디어, 인용할 문장, 관련 맥락을 정리한다.
 2. 블로그 초안은 `content/posts/` 아래에 새 Markdown 파일로 작성한다.
-3. 초안 front matter에는 반드시 `draft = true`를 넣는다.
+3. 사용자가 명시적으로 원하지 않는다고 하지 않는 한 대표 이미지를 함께 생성한다.
+   - 대표 이미지 크기: **1000 x 300 px**
+   - 저장 위치: `assets/images/`
+   - 형식: PNG
+   - 파일명: post slug와 동일한 kebab-case
+   - front matter에 `featuredImage = 'images/<post-slug>.png'`를 추가한다.
+4. 초안 front matter에는 반드시 `draft = true`를 넣는다.
 
 ```toml
 +++
@@ -101,12 +107,12 @@ featuredImage = 'images/draft-title.png'
 +++
 ```
 
-4. 원본 Obsidian 문서에 새 블로그 문서가 나중에 웹에 렌더링될 주소를 링크로 추가한다.
+5. 원본 Obsidian 문서에 새 블로그 문서가 나중에 웹에 렌더링될 주소를 링크로 추가한다.
    - 기본 주소 형식: `http://jmyl.github.io/posts/<post-slug>/`
    - `<post-slug>`는 `content/posts/<post-slug>.md`의 파일명에서 `.md`를 뺀 값이다.
    - 예: `content/posts/protocol-handler-tests.md` → `http://jmyl.github.io/posts/protocol-handler-tests/`
-5. Obsidian 문서에는 중복 추가를 피하고, 이미 같은 블로그 링크가 있으면 갱신하거나 그대로 둔다.
-6. 원본 Obsidian 내용을 그대로 대량 복사하지 말고, 필요한 부분만 인용/재구성해서 블로그 글로 다듬는다.
+6. Obsidian 문서에는 중복 추가를 피하고, 이미 같은 블로그 링크가 있으면 갱신하거나 그대로 둔다.
+7. 원본 Obsidian 내용을 그대로 대량 복사하지 말고, 필요한 부분만 인용/재구성해서 블로그 글로 다듬는다.
 
 Obsidian 문서에 추가할 링크 예시:
 
@@ -118,7 +124,7 @@ Blog draft: [Protocol Handler Tests](http://jmyl.github.io/posts/protocol-handle
 
 ## 자동 생성 이미지 Workflow
 
-앞으로 대표 이미지 자동 생성을 자주 요청할 수 있다. 생성/추가 시 아래 규칙을 따른다.
+대표 이미지는 새 글 작성 시 기본으로 생성한다. 단, 사용자가 명시적으로 원하지 않는다고 한 경우에는 생략한다. 생성/추가 시 아래 규칙을 따른다.
 
 - 대표 이미지 크기: **1000 x 300 px**
 - 저장 위치: `assets/images/`
